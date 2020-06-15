@@ -2,7 +2,7 @@
 function validaForm(frm) {
     if(frm.nome.value == "" || frm.nome.value == null || frm.nome.value.lenght < 3);{
       //É mostrado um alerta, caso o campo esteja vazio.
-      alert("Por favor, indique o seu nome.");
+      
       //Foi definido um focus no campo.
       frm.nome.focus();
       //o form não é enviado.
