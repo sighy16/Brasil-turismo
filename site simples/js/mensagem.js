@@ -1,17 +1,4 @@
 
-function Enviar() {
- 
-    var nome = document.getElementById("nome");
- 
-    if (nome.value !="") {
-        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
-    }
-
-    else{
-   	alert('Prencha os campos por favor!!');
-   	}
-
-}
 function validaForm(frm) {
     if(frm.nome.value == "" || frm.nome.value == null || frm.nome.value.lenght < 3);{
       //É mostrado um alerta, caso o campo esteja vazio.
@@ -32,6 +19,20 @@ function validaForm(frm) {
         return false;
     }
     
+}
+
+function Enviar() {
+ 
+    var nome = document.getElementById("nome");
+ 
+    if (nome.value !="") {
+        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+    }
+
+    else{
+   	alert('Prencha os campos por favor!!');
+   	}
+
 }
 
 
