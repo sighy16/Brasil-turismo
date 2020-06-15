@@ -7,19 +7,19 @@ function Enviar() {
         alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
     }
 
-	else{
-   		alert('Prencha os campos por favor!!');
+    else{
+   	alert('Prencha os campos por favor!!');
    	}
 
 }
 function validaForm(frm) {
- 	if(frm.nome.value == "" || frm.nome.value == null || frm.nome.value.lenght < 3);{
-        //É mostrado um alerta, caso o campo esteja vazio.
-      		alert('preencha os camps!!');
-        //Foi definido um focus no campo.
-        frm.nome.focus();
-        //o form não é enviado.
-        return false;
+    if(frm.nome.value == "" || frm.nome.value == null || frm.nome.value.lenght < 3);{
+      //É mostrado um alerta, caso o campo esteja vazio.
+      alert("Por favor, indique o seu nome.");
+      //Foi definido um focus no campo.
+      frm.nome.focus();
+      //o form não é enviado.
+      return false;
    	
     }
     //o campo e-mail precisa de conter: "@", "." e não pode estar vazio
