@@ -7,7 +7,7 @@ function Enviar() {
         alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
     }
 
-	else{
+	else(nome.value.lenght < 3){
    		alert('Prencha os campos por favor!!');
    	}
 
