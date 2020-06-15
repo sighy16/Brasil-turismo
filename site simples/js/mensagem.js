@@ -7,7 +7,7 @@ function Enviar() {
         alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
     }
 
-	else(nome.value.lenght < 3){
+	else{
    		alert('Prencha os campos por favor!!');
    	}
 
@@ -15,7 +15,7 @@ function Enviar() {
 function validaForm(frm) {
  	if(frm.nome.value == "" || frm.nome.value == null || frm.nome.value.lenght < 3);{
         //É mostrado um alerta, caso o campo esteja vazio.
-      
+      		alert('preencha os camps!!');
         //Foi definido um focus no campo.
         frm.nome.focus();
         //o form não é enviado.
