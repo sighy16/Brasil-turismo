@@ -1,8 +1,9 @@
 <!docktype html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="./site simples/css/style.css">
-		<link rel="shortcut icon" href="./site simples/img/logo.png" size="32x32" type="img/png">
+		<link rel="stylesheet" type="text/css" href="../site simples/css/style.css">
+		<script src="../site simples/js/mensagem.js"></script>
+		<link rel="shortcut icon" href="../site simples/img/logo.png" size="32x32" type="img/png">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 <body>
@@ -10,12 +11,12 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div id="logo">
-				<img id="logo"height="150px" width="200px" src="./site simples/img/logo.png"alt="some text">
+				<img id="logo"height="150px" width="200px" src="../site simples/img/logo.png"alt="some text">
 			</div>
 		<div id="menu">
-			<a href="index.html">Inicio</a>
-			<a href="locais.html">Locais</a>
-			<a href="faleconosco.html">Fale conosco</a>
+			<a href="../site simples/index.html">Inicio</a>
+			<a href="../site simples/locais.html">Locais</a>
+			<a href="../site simples/faleconosco.html">Fale conosco</a>
 		</div>
 			
 		</div>
@@ -25,7 +26,8 @@
 		<div class="container-fluid">
 			
 			<h1>Deixe sua História</h1>
-			<form>
+			<form name="frmTeste" method="post" action="#" onsubmit="return validaForm(this);">
+
 					
 						<fieldset>
 							<legend >Identificação do Usuário</legend>
@@ -49,8 +51,10 @@
 
 							
 
-							<p><input type="submit" name="enviar" value="enviar" class="btn btn-danger  ">
-								<input type="reset" name="limpar" value="Limpar campos" class="btn btn-danger">
+							<p class="sumit"> 
+								<input type="submit" onclick="Enviar();" value="Enviar" />
+								<input type="reset" onclick="Limpar();" value="Limpar" />
+							
 							</p>
 
 				</form>
